@@ -250,23 +250,24 @@ body {
 
 //Slider
 
-/* Stylizacja slajdera i slajdów */
+// Stylizacja slajdera i slajdów
 .slider-container {
   overflow: hidden;
   padding-left: 100px;
+  position: relative;
 }
 
 .slider {
   display: flex;
-  gap: 20px; /* Dodaj odstęp między slajdami */
-  transition: transform 0.3s ease-in-out; /* Dodaj płynne przejście między slajdami */
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide {
   width: 100%;
-  padding: 20px 60px; /* Dodaj odpowiedni wewnętrzny odstęp */
-  box-sizing: border-box; /* Upewnij się, że padding nie wpływa na szerokość */
-  background-color: white; /* Białe tło */
+  padding: 20px 60px;
+  box-sizing: border-box;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -285,8 +286,38 @@ body {
 }
 
 .slide p {
-  font-size: 16px;
-  margin-top: 10px;
+  font-size: 17px;
+  font-family: "Roboto Light";
+  color: #000;
+  line-height: 25px;
 }
 
-/* Dodaj style dla h3 i p */
+/* Stylizacja przycisków nawigacji */
+.slider-nav {
+  display: flex;
+  justify-content: center; /* Wyśrodkuj na osi poziomej */
+  align-items: center; /* Wyśrodkuj na osi pionowej */
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.prev-slide,
+.next-slide {
+  padding: 10px 20px;
+  background-color: #3146ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 5px;
+}
+
+.prev-slide:hover,
+.next-slide:hover {
+  background-color: #01ffcb;
+  transition: background-color 0.3s;
+}

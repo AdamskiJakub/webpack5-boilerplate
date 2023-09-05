@@ -26,3 +26,35 @@ dropdownToggle.addEventListener("click", () => {
     document.querySelector(".arrow-up").style.display = "inline-block";
   }
 });
+
+// Slider
+
+const slider = document.querySelector(".slider");
+const prevSlideButton = document.querySelector(".prev-slide");
+const nextSlideButton = document.querySelector(".next-slide");
+
+let currentSlide = 0;
+
+prevSlideButton.addEventListener("click", () => {
+  console.log("current cos tam:", currentSlide);
+  if (currentSlide > 0) {
+    currentSlide--;
+  } else {
+    currentSlide = slider.children.length - 1;
+  }
+  updateSlider();
+});
+
+nextSlideButton.addEventListener("click", () => {
+  console.log("currentSlide:", currentSlide);
+  if (currentSlide < slider.children.length - 1) {
+    currentSlide++;
+  } else {
+    currentSlide = 0;
+  }
+  updateSlider();
+});
+
+function updateSlider() {
+  slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+}

@@ -221,25 +221,25 @@ body {
   }
 }
 
-// Stylizacja sekcji cech (features)
-.features {
+// Stylizacja sekcji cech (overwievs)
+.overwievs {
   display: flex;
   justify-content: flex-start;
   padding: 30px;
 
-  .feature {
+  .overwiev {
     text-align: left;
     max-width: 300px;
     margin-right: 20px;
     padding-right: 20px;
     padding-left: 70px;
 
-    .feature-heading {
+    .overwiev-heading {
       font-size: 24px;
       margin-bottom: 10px;
     }
 
-    .feature-text {
+    .overwiev-text {
       font-size: 17px;
       font-family: "Roboto Light";
       color: #000;
@@ -251,6 +251,13 @@ body {
 //Slider
 
 // Stylizacja slajdera i slajdów
+
+.slider-header {
+  padding-left: 100px;
+  color: #000;
+  font-family: "Roboto Regular";
+  font-size: 17px;
+}
 .slider-container {
   overflow: hidden;
   padding-left: 100px;
@@ -292,12 +299,12 @@ body {
   line-height: 25px;
 }
 
-/* Stylizacja przycisków nawigacji */
+/* Stylizacja przycisków slajdera */
 .slider-nav {
   display: flex;
   justify-content: center; /* Wyśrodkuj na osi poziomej */
   align-items: center; /* Wyśrodkuj na osi pionowej */
-  position: fixed;
+
   bottom: 20px;
   left: 0;
   right: 0;
@@ -320,4 +327,86 @@ body {
 .next-slide:hover {
   background-color: #01ffcb;
   transition: background-color 0.3s;
+}
+
+/* Stylizacja sekcji "Features" */
+.features {
+  margin-top: 100px;
+  background-color: #3146ff;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.features-background {
+  position: relative;
+  margin-bottom: -100px;
+}
+
+.features-background img {
+  width: 100%;
+  display: block;
+}
+
+.silver-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  max-height: 150%;
+  max-width: 30%;
+  padding-right: 300px;
+}
+
+.features-content {
+  padding-left: 100px;
+  padding-top: 200px;
+  box-sizing: border-box;
+  display: flex;
+
+  align-items: flex-start;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.feature-details {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  flex-direction: column;
+}
+
+.feature-description {
+  padding-top: 80px;
+  font-size: 18px;
+  line-height: 1.5;
+  width: 500px;
+}
+
+.view-specs {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.view-specs a {
+  display: block;
+  padding: 10px 30px;
+  background-color: #01ffcb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.view-specs a:hover {
+  background-color: #3146ff;
 }

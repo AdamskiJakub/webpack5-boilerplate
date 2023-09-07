@@ -6,6 +6,10 @@ import hand from "../assets/hand.png";
 import apple from "../assets/apple_store_badge.png";
 import play from "../assets/google_store_badge.png";
 import problemsolving from "../assets/mob_roblem_solving.png";
+import layer from "../assets/Layer_78.png";
+import silver from "../assets/silver.png";
+import mob from "../assets/mob_mobile.png";
+import space from "../assets/Space_gray.png";
 
 // Rozwijana lista do zmiany języka na ikonce Globe
 const dropdownToggle = document.getElementById("dropdown-toggle");
@@ -34,27 +38,42 @@ const prevSlideButton = document.querySelector(".prev-slide");
 const nextSlideButton = document.querySelector(".next-slide");
 
 let currentSlide = 0;
+let canClickNext = true;
 
 prevSlideButton.addEventListener("click", () => {
-  console.log("current cos tam:", currentSlide);
   if (currentSlide > 0) {
     currentSlide--;
-  } else {
-    currentSlide = slider.children.length - 1;
+    updateSlider();
+    canClickNext = true;
+    updateButtons();
   }
-  updateSlider();
 });
 
 nextSlideButton.addEventListener("click", () => {
-  console.log("currentSlide:", currentSlide);
-  if (currentSlide < slider.children.length - 1) {
+  if (canClickNext && currentSlide < slider.children.length - 1) {
     currentSlide++;
-  } else {
-    currentSlide = 0;
+    updateSlider();
+    canClickNext = false;
+    updateButtons();
   }
-  updateSlider();
 });
 
 function updateSlider() {
   slider.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
+
+function updateButtons() {
+  if (currentSlide === 0) {
+    prevSlideButton.disabled = true;
+  } else {
+    prevSlideButton.disabled = false;
+  }
+
+  if (currentSlide === slider.children.length - 1 || !canClickNext) {
+    nextSlideButton.disabled = true;
+  } else {
+    nextSlideButton.disabled = false;
+  }
+}
+
+updateButtons();

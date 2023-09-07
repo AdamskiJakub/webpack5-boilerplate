@@ -410,3 +410,218 @@ h2 {
 .view-specs a:hover {
   background-color: #3146ff;
 }
+
+/* Stylizacja sekcji "Continue Feature ROom Booking" */
+.features-alt {
+  margin-top: 100px;
+  background-color: #f7f7f7;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+}
+
+.features-alt-content {
+  flex: 1;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.features-alt-content h2 {
+  font-family: "Poppins";
+  color: #000;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.features-alt-content p {
+  font-family: "Roboto Light";
+  font-size: 17px;
+  line-height: 25px;
+  color: #000;
+}
+
+.features-alt-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.features-alt-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  position: relative;
+  top: -100px;
+  left: 100px;
+}
+
+.feature-line {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.features-alt-details .feature-line {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 17px;
+}
+
+.features-alt-details .feature-line::first-word {
+  font-weight: bold;
+}
+
+// Accordion Section
+
+/* ACCORDION SECTION */
+.acc-section {
+  padding-top: 5px;
+  width: 85%;
+  margin: auto;
+}
+
+/* Ukrycie domyślnego znacznika listy w Webkit */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ACCORDION SECTION */
+.acc-section {
+  padding-top: 5px;
+  width: 85%;
+  margin: auto;
+}
+
+/* Ukrycie domyślnego znacznika listy w Webkit */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Styl dla nagłówka akordeonu */
+details summary {
+  width: 100%;
+  font-family: "Poppins ";
+  font-weight: bold;
+  height: 30px;
+  color: #000;
+  padding: 0.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+  font-size: 19px;
+  line-height: 26px;
+  list-style: none;
+  transition: height 1.5s;
+}
+
+/* Ikona strzałki w nagłówku akordeonu */
+details summary:after {
+  content: "^";
+  color: grey;
+  position: absolute;
+  font-size: 1rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  transform: rotate(180deg);
+  right: 0;
+  font-weight: 200;
+  transform-origin: center;
+  transition: 200ms linear;
+}
+
+/* Styl hover dla nagłówka akordeonu (tylko tekst) */
+details summary:hover {
+  color: #3146ff;
+}
+/* Styl aktywny dla nagłówka akordeonu (tylko tekst) */
+details[open] summary {
+  color: #3146ff;
+  height: 100px;
+  transition: height 1.5s;
+}
+
+/* Styl dla zawartości akordeonu */
+details[open] p {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+}
+
+/* Stylizacja sekcji Support */
+.support-section {
+  padding: 50px 0;
+}
+
+.support-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.support-item {
+  padding: 90px;
+  margin-top: -40px;
+  text-align: left;
+  width: 450px;
+}
+
+.support-item h2 {
+  font-size: 24px;
+  font-family: "Poppins";
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000;
+}
+
+.support-item p {
+  font-size: 17px;
+  font-family: "Roboto Light";
+  line-height: 25px;
+  color: #000;
+  text-align: left;
+}
+
+/* Stylizacja sekcji "Download" */
+.download-section {
+  display: flex;
+
+  align-items: center;
+  background-color: #f0f0f0;
+  margin-left: 90px;
+  height: 80px;
+  text-align: center;
+  width: 85%;
+}
+
+/* Stylizacja tekstu */
+.download-text {
+  display: inline-block;
+}
+
+.download-text p {
+  display: inline;
+  margin-top: 50px;
+  padding-top: 100px;
+  padding: 0 40px; /* Dodanie odstępu między wyrazami */
+  border-right: 1px solid #ccc; /* Dodanie obramowania między wyrazami */
+}
+
+/* Stylizacja przycisku "Download" */
+.download-button {
+  background-color: #3146ff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #01ffcb;
+}

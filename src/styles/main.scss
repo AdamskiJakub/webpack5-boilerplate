@@ -5,7 +5,7 @@ $grey-color: grey;
 
 // Body
 body {
-  background-color: #f7f7f7;
+  background-color: white;
   padding-top: 120px;
 }
 
@@ -472,8 +472,6 @@ h2 {
   font-weight: bold;
 }
 
-// Accordion Section
-
 /* ACCORDION SECTION */
 .acc-section {
   padding-top: 5px;
@@ -481,24 +479,21 @@ h2 {
   margin: auto;
 }
 
-/* Ukrycie domyślnego znacznika listy w Webkit */
 details summary::-webkit-details-marker {
   display: none;
 }
 
-/* ACCORDION SECTION */
+/* Sekcja Accordion */
 .acc-section {
   padding-top: 5px;
   width: 85%;
   margin: auto;
 }
 
-/* Ukrycie domyślnego znacznika listy w Webkit */
 details summary::-webkit-details-marker {
   display: none;
 }
 
-/* Styl dla nagłówka akordeonu */
 details summary {
   width: 100%;
   font-family: "Poppins ";
@@ -512,10 +507,8 @@ details summary {
   font-size: 19px;
   line-height: 26px;
   list-style: none;
-  transition: height 1.5s;
 }
 
-/* Ikona strzałki w nagłówku akordeonu */
 details summary:after {
   content: "^";
   color: grey;
@@ -530,18 +523,16 @@ details summary:after {
   transition: 200ms linear;
 }
 
-/* Styl hover dla nagłówka akordeonu (tylko tekst) */
 details summary:hover {
   color: #3146ff;
 }
-/* Styl aktywny dla nagłówka akordeonu (tylko tekst) */
+
 details[open] summary {
   color: #3146ff;
-  height: 100px;
+  height: 20px;
   transition: height 1.5s;
 }
 
-/* Styl dla zawartości akordeonu */
 details[open] p {
   font-size: 0.95rem;
   margin: 0 0 1rem;
@@ -591,10 +582,10 @@ details[open] p {
 
   align-items: center;
   background-color: #f0f0f0;
-  margin-left: 90px;
+  margin-left: 60px;
   height: 80px;
   text-align: center;
-  width: 85%;
+  width: 90%;
 }
 
 /* Stylizacja tekstu */
@@ -616,7 +607,7 @@ details[open] p {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
-  margin-left: 20px;
+  margin-left: 70px;
   border-radius: 5px;
   font-size: 18px;
   transition: background-color 0.3s;
@@ -624,4 +615,396 @@ details[open] p {
 
 .download-button:hover {
   background-color: #01ffcb;
+}
+
+.download-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 25px;
+}
+
+/* Styl sekcji Big */
+
+.image-section {
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  margin-bottom: -100px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text-content h1 {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+.text-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.image {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+  font-family: "Poppins";
+}
+
+.header {
+  text-align: left;
+  padding: 20px;
+  width: 48%;
+}
+
+.header h2 {
+  font-size: 24px;
+}
+
+.header p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  color: #000;
+}
+
+/* Stylizacja sekcji "Partners" */
+.partners-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+/* Stylizacja tekstu po lewej stronie */
+.partners-text {
+  text-align: left; /* Zmiana na left */
+  width: 500px;
+  padding-left: 100px;
+}
+
+.partners-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.partners-text p {
+  font-family: "Roboto Light", sans-serif;
+  color: #000;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  margin-top: 50px;
+}
+
+.partner {
+  flex: 1;
+  text-align: center;
+}
+
+.partner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.partner p {
+  font-family: "Roboto Light", sans-serif;
+  color: #000;
+  font-size: 17px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+/* Stylizacja sekcji "Zoptymalizuj Koszty i ergonomię biura z Zonifero" */
+.optimize-costs {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.text-content {
+  flex: 1;
+  margin-right: 20px;
+  padding-left: 100px;
+}
+
+.text-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.text-content p {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-right: 300px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.header p {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 17px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+/* Stylizacja sekcji sklepu */
+.shop-section {
+  display: flex;
+  align-items: center; /* Wyśrodkowanie wertykalne w sekcji */
+  padding: 40px;
+  background-color: #f2f2f2;
+  margin-bottom: 40px;
+  text-align: left; /* Tekst w lewym rogu */
+
+  h1 {
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: "Roboto Light";
+    font-size: 17px;
+    color: #000;
+    margin-bottom: 20px;
+    line-height: 25px;
+    width: 300px;
+  }
+
+  .cta-button {
+    background-color: #3146ff;
+    color: #fff;
+    width: 180px;
+    height: 60px;
+    padding: 10px 20px;
+    font-family: "Roboto Regular";
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #1d2ed4;
+    }
+  }
+
+  .images-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 600px;
+    height: 400px;
+
+    .image1,
+    .image2,
+    .image3 {
+      position: absolute;
+    }
+
+    .image1 {
+      z-index: 3;
+      left: -50px;
+      bottom: 0;
+    }
+
+    .image2 {
+      z-index: 2;
+      right: 180px;
+    }
+
+    .image3 {
+      z-index: 1;
+      right: 0;
+      bottom: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/* Stylizacja sekcji "Questions" */
+.questions-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Dodaj odstęp między lewym, środkowym a prawym kontentem */
+  padding-left: 100px;
+  margin-bottom: 40px;
+  text-align: center;
+
+  h1 {
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    width: 100px;
+    color: #000;
+  }
+
+  .center-content {
+    background-color: white;
+    padding: 20px;
+    margin-left: 170px;
+    justify-content: center;
+
+    border-radius: 5px;
+    text-align: left;
+
+    h4 {
+      font-family: "Roboto Regular";
+      font-weight: bold;
+      text-align: left;
+      font-size: 17px;
+      line-height: 1px;
+      color: #000;
+    }
+
+    p {
+      font-family: "Roboto Light";
+      font-size: 17px;
+      line-height: 25px;
+      color: #000;
+    }
+  }
+
+  .right-content {
+    flex-basis: calc(
+      33.33% - 20px
+    ); /* Dostosuj szerokość do preferencji z odstępem */
+    line-height: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+}
+
+/* Stylizacja sekcji "bottom-content" */
+.bottom-content {
+  display: flex;
+  float: right;
+  margin-right: 450px;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 20px;
+  width: 500px;
+
+  h4 {
+    font-family: "Roboto Regular";
+    font-weight: bold;
+    text-align: left;
+    font-size: 17px;
+    line-height: 1px;
+    color: #000;
+  }
+}
+
+/* Stylizacja sekcji "contact-form" */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px; /* Dostosuj szerokość formularza do swoich preferencji */
+  margin: 0 auto; /* Wyśrodkowanie formularza */
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* Stylizacja poszczególnych wierszy formularza */
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px; /* Odstęp między wierszami */
+}
+
+/* Stylizacja etykiet formularza */
+.form-row label {
+  width: 150px; /* Szerokość etykiety */
+  font-family: "Roboto Regular";
+  font-weight: bold;
+  font-size: 17px;
+  color: #000;
+  margin-right: 10px; /* Odstęp między etykietą a polem formularza */
+}
+
+/* Stylizacja pól formularza */
+.form-row input {
+  flex-grow: 1;
+  height: 25px;
+  border: none;
+  border-bottom: 1px dotted #000; /* Linia kropkowana jako separatory */
+  font-family: "Roboto Regular";
+  font-size: 17px;
+  color: #000;
+  background: transparent; /* Transparentne tło pól formularza */
 }

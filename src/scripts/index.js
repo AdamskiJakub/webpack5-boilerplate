@@ -10,6 +10,13 @@ import layer from "../assets/Layer_78.png";
 import silver from "../assets/silver.png";
 import mob from "../assets/mob_mobile.png";
 import space from "../assets/Space_gray.png";
+import Big from "../assets/Layer_59.png";
+import partner1 from "../assets/logo_nsg.png";
+import microsoft from "../assets/Layer_504.png";
+import devices from "../assets/mob_devices_copy.png";
+import printer from "../assets/printer.png";
+import uchwyt from "../assets/uchwyt.png";
+import starter from "../assets/Lobby_Starter_Kit.png";
 
 // Rozwijana lista do zmiany języka na ikonce Globe
 const dropdownToggle = document.getElementById("dropdown-toggle");

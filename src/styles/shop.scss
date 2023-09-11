@@ -1,0 +1,80 @@
+/* Stylizacja sekcji sklepu */
+.shop-section {
+  display: flex;
+  align-items: center; /* Wyśrodkowanie wertykalne w sekcji */
+  padding: 40px;
+  background-color: #f2f2f2;
+  margin-bottom: 40px;
+  text-align: left; /* Tekst w lewym rogu */
+
+  h1 {
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: "Roboto Light";
+    font-size: 17px;
+    color: #000;
+    margin-bottom: 20px;
+    line-height: 25px;
+    width: 300px;
+  }
+
+  .cta-button {
+    background-color: #3146ff;
+    color: #fff;
+    width: 180px;
+    height: 60px;
+    padding: 10px 20px;
+    font-family: "Roboto Regular";
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #1d2ed4;
+    }
+  }
+
+  .images-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 600px;
+    height: 400px;
+
+    .image1,
+    .image2,
+    .image3 {
+      position: absolute;
+    }
+
+    .image1 {
+      z-index: 3;
+      left: -50px;
+      bottom: 0;
+    }
+
+    .image2 {
+      z-index: 2;
+      right: 180px;
+    }
+
+    .image3 {
+      z-index: 1;
+      right: 0;
+      bottom: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

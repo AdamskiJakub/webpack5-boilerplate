@@ -1,0 +1,55 @@
+/* Stylizacja sekcji "Partners" */
+.partners-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+/* Stylizacja tekstu po lewej stronie */
+.partners-text {
+  text-align: left; /* Zmiana na left */
+  width: 500px;
+  padding-left: 100px;
+}
+
+.partners-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.partners-text p {
+  font-family: "Roboto Light", sans-serif;
+  color: #000;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  margin-top: 50px;
+}
+
+.partner {
+  flex: 1;
+  text-align: center;
+}
+
+.partner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.partner p {
+  font-family: "Roboto Light", sans-serif;
+  color: #000;
+  font-size: 17px;
+  line-height: 25px;
+  margin-top: 10px;
+}

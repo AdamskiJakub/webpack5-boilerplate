@@ -1,0 +1,43 @@
+/* Stylizacja footer */
+.footer {
+  margin-top: 400px;
+  background-color: #3146ff;
+  color: white;
+  padding-top: 100px;
+  padding-left: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-content {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  font-family: "Roboto Regular";
+  margin-bottom: 50px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  font-family: "Roboto Light";
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  border-bottom: 1px solid white;
+}

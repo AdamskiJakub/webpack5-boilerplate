@@ -1,4 +1,19 @@
 import "../styles/main.scss";
+import "../styles/nav.scss";
+import "../styles/hero.scss";
+import "../styles/overwiev.scss";
+import "../styles/slider.scss";
+import "../styles/features.scss";
+import "../styles/accordion.scss";
+import "../styles/support.scss";
+import "../styles/big.scss";
+import "../styles/partners.scss";
+import "../styles/optimalization.scss";
+import "../styles/shop.scss";
+import "../styles/questions.scss";
+import "../styles/form.scss";
+import "../styles/swiper.scss";
+import "../styles/footer.scss";
 import logoImg from "../assets/logo.png";
 import mobileZoniferoLogo from "../assets/zonifero_logo.png";
 import globe from "../assets/globe.png";
@@ -17,6 +32,11 @@ import devices from "../assets/mob_devices_copy.png";
 import printer from "../assets/printer.png";
 import uchwyt from "../assets/uchwyt.png";
 import starter from "../assets/Lobby_Starter_Kit.png";
+import mob2 from "../assets/mob_.png";
+
+import "../scripts/swiper.js";
+import "../scripts/formValidation.js";
+import "../scripts/active.js";
 
 // Rozwijana lista do zmiany języka na ikonce Globe
 const dropdownToggle = document.getElementById("dropdown-toggle");

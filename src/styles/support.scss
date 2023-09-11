@@ -1,0 +1,81 @@
+/* Stylizacja sekcji Support */
+.support-section {
+  padding: 50px 0;
+}
+
+.support-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.support-item {
+  padding: 90px;
+  margin-top: -40px;
+  text-align: left;
+  width: 450px;
+}
+
+.support-item h2 {
+  font-size: 24px;
+  font-family: "Poppins";
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000;
+}
+
+.support-item p {
+  font-size: 17px;
+  font-family: "Roboto Light";
+  line-height: 25px;
+  color: #000;
+  text-align: left;
+}
+
+.download-section {
+  display: flex;
+
+  align-items: center;
+  background-color: #f0f0f0;
+  margin-left: 60px;
+  height: 80px;
+  text-align: center;
+  width: 90%;
+}
+
+.download-text {
+  display: inline-block;
+}
+
+.download-text p {
+  display: inline;
+  margin-top: 50px;
+  padding-top: 100px;
+  padding: 0 40px;
+  border-right: 1px solid #ccc;
+}
+
+.download-button {
+  background-color: #3146ff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-left: 70px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #01ffcb;
+}
+
+.download-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 25px;
+}

@@ -1,0 +1,65 @@
+/* Styl sekcji Big */
+
+.image-section {
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  margin-bottom: -100px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text-content h1 {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+.text-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.image {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+  font-family: "Poppins";
+}
+
+.header {
+  text-align: left;
+  padding: 20px;
+  width: 48%;
+}
+
+.header h2 {
+  font-size: 24px;
+}
+
+.header p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  color: #000;
+}

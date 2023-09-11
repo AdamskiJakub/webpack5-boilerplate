@@ -1,0 +1,142 @@
+/* Stylizacja sekcji "Features" */
+.features {
+  margin-top: 100px;
+  background-color: #3146ff;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.features-background {
+  position: relative;
+  margin-bottom: -100px;
+}
+
+.features-background img {
+  width: 100%;
+  display: block;
+}
+
+.silver-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  max-height: 150%;
+  max-width: 30%;
+  padding-right: 300px;
+}
+
+.features-content {
+  padding-left: 100px;
+  padding-top: 200px;
+  box-sizing: border-box;
+  display: flex;
+
+  align-items: flex-start;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.feature-details {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  flex-direction: column;
+}
+
+.feature-description {
+  padding-top: 80px;
+  font-size: 18px;
+  line-height: 1.5;
+  width: 500px;
+}
+
+.view-specs {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.view-specs a {
+  display: block;
+  padding: 10px 30px;
+  background-color: #01ffcb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.view-specs a:hover {
+  background-color: #3146ff;
+}
+
+/* Stylizacja sekcji "Continue Feature ROom Booking" */
+.features-alt {
+  margin-top: 100px;
+  background-color: #f7f7f7;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+}
+
+.features-alt-content {
+  flex: 1;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.features-alt-content h2 {
+  font-family: "Poppins";
+  color: #000;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.features-alt-content p {
+  font-family: "Roboto Light";
+  font-size: 17px;
+  line-height: 25px;
+  color: #000;
+}
+
+.features-alt-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.features-alt-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  position: relative;
+  top: -100px;
+  left: 100px;
+}
+
+.feature-line {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.features-alt-details .feature-line {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 17px;
+}
+
+.features-alt-details .feature-line::first-word {
+  font-weight: bold;
+}

@@ -1,0 +1,95 @@
+/* Stylizacja sekcji "bottom-content" */
+.bottom-content {
+  display: flex;
+  float: right;
+  margin-right: 450px;
+  flex-direction: column;
+  align-items: left;
+  padding-top: -70px;
+  width: 500px;
+
+  h4 {
+    font-family: "Roboto Regular";
+    font-weight: bold;
+    text-align: left;
+    font-size: 17px;
+    line-height: 1px;
+    color: #000;
+  }
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 250px;
+  width: 100%;
+}
+
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-row label::after {
+  content: " *";
+  color: #007bff;
+}
+
+.form-row label {
+  font-family: "Roboto Light";
+  line-height: 50px;
+  font-size: 15px;
+  color: #000;
+}
+
+.form-row input,
+.form-row textarea {
+  height: 25px;
+  border: none;
+  border-bottom: 1px dotted #000;
+  font-family: "Roboto Regular";
+  font-size: 17px;
+  color: #000;
+  background: transparent;
+}
+
+.form-section-three {
+  grid-column: span 2;
+}
+
+.send-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#sendMessageButton {
+  padding: 10px 20px;
+  font-family: "Roboto Regular";
+  font-weight: bold;
+  font-size: 17px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+#sendMessageButton:hover {
+  background-color: #0056b3;
+}
